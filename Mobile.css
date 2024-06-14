@@ -1,0 +1,38 @@
+body{
+        background-color: green;
+    }
+
+
+footer{
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+
+footer .footer-images1{
+    height: 14vh;
+}
+footer .footer-images2{
+    height: 28vh;
+} 
+
+
+
+footer .footer-content {
+    margin: 2vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .footer-links {
+    width:25vh;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    border-top: 0px;
+    border-left: 1px solid #333;
+}
+

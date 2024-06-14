@@ -1,0 +1,239 @@
+body {
+    font-size: 80%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfcf9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+    border-color: grey;
+}
+
+main {
+    padding: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.faq input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.faq_content{
+    display: flex;
+    flex-direction: row; 
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    /* margin-bottom: 20px; */
+    margin-bottom: 4vh;
+    /* margin-right: 70px; */
+    margin-right: 9vh;
+    padding-bottom: 10px;
+}
+
+.categories button {
+    text-align: left;
+    padding: 18px 20px;
+    border: none;
+    font-weight: 550;
+    color: #666;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.categories button.active,
+.categories button:hover {
+    font-weight: 550;
+    color: black;
+    border-color: #EBCF7E;
+}
+
+/* .faq-list {
+    border-top: 1px solid #EBCF7E;
+} */
+
+.faq-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #EBCF7E;
+}
+
+.faq-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color: #fff;
+    padding: 3vh 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    min-height: 100%;
+}
+
+footer .footer-images1{
+    margin: 0 0 1vh;
+    display: flex;
+    /* height:18vh; */
+    height: 9pc;
+}
+footer .footer-images2{
+    /* margin-top: 80px; */
+    margin-top: 9vh;
+    display: flex;
+    /* height:32vh; */
+    height: 16pc;
+}
+
+
+footer .footer-content {
+    margin: 2vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer .footer-content h3 {
+    margin: 0 0 10px;
+}
+
+
+footer .social-media a {
+    margin-right: 1vh;
+}
+
+footer .social-media img {
+    height: 40px;
+}
+
+footer .footer-links {
+    width:25vh;
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    border-top: 1px solid #333;
+}
+
+
+footer .footer-links a {
+    margin-right: 0px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* footer .footer-links ul{
+    padding: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+footer .footer-links li{
+    list-style: none;
+    width: 7.2vh;
+    padding: 4px;
+    padding-right: 3vh;
+    margin: 4px;
+    cursor: pointer;
+    text-align: left;
+}
+
+
+@media screen and (max-width:908px) {
+    body{
+        background-color: blue;
+    }
+
+    footer .footer-images2 img {
+        height: 28vh;
+    }
+    footer .footer-images1 img {
+        height: 14vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    body{
+        background-color: red;
+    }
+
+    footer .footer-images2 img {
+        height: auto;
+    }
+    footer .footer-images1 img {
+        height: auto;
+    }
+}
+
